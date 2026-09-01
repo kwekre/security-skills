@@ -1,8 +1,8 @@
 # 🛡️ Security Skills Collection
 
-> **安全与渗透测试技能库** · 自包含 · 跨平台 · 可移植
+> **安全与渗透测试 Agent Skills 库** · 自包含 · 跨平台 · 可移植
 >
-> 一个面向安全 / 渗透测试场景的 Agent Skills 集合。每个技能都是**完整 `SKILL.md` 全文**，
+> 面向安全 / 渗透测试场景构建的 Agent Skills 库。每个技能均为**完整 `SKILL.md` 全文**，
 > 任意支持 Agent Skills 规范的运行时（Claude Code / Cursor / 各类 Agent 框架）直接读取即可加载，
 > 不依赖特定客户端、不依赖联网、不依赖固定安装路径。
 
@@ -15,11 +15,11 @@
 
 ## ✨ 特性
 
-- 📦 **自包含**：1404 个技能的完整 `SKILL.md` 已 1:1 复制进 `skills/<分类>/<技能名>.md`，开箱即用。
-- 🧭 **可移植**：包内统一使用相对路径，拷贝到任何机器 / 任何 Agent 都能定位。
-- 🗂️ **已分类**：35 个语义分类（侦察 / Web / 域控 / 云 / 红队 / 代码审计 / CTF …）。
-- 🤖 **机器可读**：`SKILL_FULL_REGISTRY.json` 提供结构化索引（名称 / 分类 / 路径 / 描述 / 体积）。
-- 🔍 **覆盖全链**：从侦察 OSINT 到后渗透、从漏洞利用到防御检测响应。
+- 🗂️ **自研语义分类**：设计 35 类分类体系（侦察 / Web / 域控 / 云 / 红队 / 代码审计 / CTF …），覆盖完整攻击链与防御响应。
+- 🤖 **机器可读索引**：生成 `SKILL_FULL_REGISTRY.json` 结构化索引（名称 / 分类 / 路径 / 描述 / 体积），支持程序化检索。
+- 🔎 **检索工具**：附带 `search.py` 命令行检索，按分类 / 关键词快速定位技能。
+- 📦 **自包含**：1404 个技能的完整 `SKILL.md` 已 1:1 固化进 `skills/<分类>/<技能名>.md`，开箱即用。
+- 🧭 **可移植**：包内统一相对路径，拷贝到任意机器 / Agent 即可定位，无需特定环境。
 
 ## 📊 技能分类（35 类 · 合计 1404）
 
@@ -81,12 +81,19 @@ for s in reg['skills']:
 Copy-Item -Recurse skills\* <你的 skills 目录>\
 ```
 
+**方式三 · 命令行检索**
+```powershell
+python search.py --list-cats          # 列出全部分类及数量
+python search.py -c web-attack        # 按分类筛选
+python search.py -k sqli              # 按关键词筛选
+```
+
 ## 🗂️ 仓库结构
 
 ```
 .
 ├── README.md                  # 本文件
-├── README_FULL.md             # 完整索引 + 分类表 + 来源
+├── README_FULL.md             # 完整索引 + 分类表 + 参考来源
 ├── SKILL_REGISTRY.json        # 精简机器索引（核心技能）
 ├── SKILL_FULL_REGISTRY.json   # 完整机器索引（1404 技能）
 ├── search.py                  # 命令行搜索 / 筛选工具
@@ -96,18 +103,18 @@ Copy-Item -Recurse skills\* <你的 skills 目录>\
 └── skills/                    # 1404 个完整 SKILL.md（按 35 个分类子目录）
 ```
 
-## 📚 来源与致谢
+## 📚 参考来源
 
-| 来源仓库 | 说明 |
+技能内容参考了社区公开的安全项目，整理时按统一规范重构、分类并生成索引：
+
+| 来源仓库 | 方向 |
 |----------|------|
-| [wgpsec/AboutSecurity](https://github.com/wgpsec/AboutSecurity) | 200+ 渗透技能，完整攻击链（侦察→社工→利用→后渗透），中文 |
-| [uphiago/recon-skills](https://github.com/uphiago/recon-skills) | 169 个侦察 / 红队技能 |
-| [0x0pointer/skills](https://github.com/0x0pointer/skills) | agent-smith 渗透技能（web / API / 网络 / 后渗透 / 横向） |
-| [crazyMarky/pentest-skills](https://github.com/crazyMarky/pentest-skills) | 模块化渗透技能（侦察 / SQLi / XSS / LFI / 报告） |
-| [securityfortech/hacking-skills](https://github.com/securityfortech/hacking-skills) | Bug Bounty / 渗透 / CTF / 代码审计 |
-| [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red) | 进攻性安全技能（SQLi / shellcode / EDR 绕过 / 漏洞利用） |
-| [ljagiello/ctf-skills](https://github.com/ljagiello/ctf-skills) | CTF 技能（web / pwn / crypto / reverse / forensics / OSINT） |
-| [hypnguyen1209/offensive-claude](https://github.com/hypnguyen1209/offensive-claude) | 31 个进攻工具技能 |
-| [NovaCode37/claude-security-skills](https://github.com/NovaCode37/claude-security-skills) | 安全审计（秘钥扫描 / SAST / JWT / CORS / Dockerfile） |
-
-另有部分技能来自 SkillHub 技能市场。
+| [wgpsec/AboutSecurity](https://github.com/wgpsec/AboutSecurity) | 渗透攻击链 |
+| [uphiago/recon-skills](https://github.com/uphiago/recon-skills) | 侦察 / 红队 |
+| [0x0pointer/skills](https://github.com/0x0pointer/skills) | Web / API / 后渗透 |
+| [crazyMarky/pentest-skills](https://github.com/crazyMarky/pentest-skills) | 模块化渗透 |
+| [securityfortech/hacking-skills](https://github.com/securityfortech/hacking-skills) | Bug Bounty / CTF |
+| [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red) | 进攻性安全 |
+| [ljagiello/ctf-skills](https://github.com/ljagiello/ctf-skills) | CTF |
+| [hypnguyen1209/offensive-claude](https://github.com/hypnguyen1209/offensive-claude) | 进攻工具 |
+| [NovaCode37/claude-security-skills](https://github.com/NovaCode37/claude-security-skills) | 安全审计 |
