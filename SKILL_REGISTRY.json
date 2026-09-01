@@ -1,0 +1,357 @@
+{
+ "version": "2026-08-29",
+ "description": "Agent 安全技能库索引 — 机器可读格式",
+ "skills": [
+  {
+   "name": "pentest-recon",
+   "category": "pentest",
+   "path": "pentest-recon/SKILL.md",
+   "description": "渗透测试信息收集（被动+主动侦察）",
+   "triggers": [
+    "recon",
+    "踩点",
+    "侦察",
+    "子域名",
+    "端口扫描",
+    "被动收集",
+    "nmap",
+    "amass",
+    "ffuf",
+    "指纹识别"
+   ],
+   "size_bytes": 2313
+  },
+  {
+   "name": "pentest-web-exploit",
+   "category": "pentest",
+   "path": "pentest-web-exploit/SKILL.md",
+   "description": "Web渗透与漏洞利用",
+   "triggers": [
+    "SQL注入",
+    "XSS",
+    "SSRF",
+    "文件上传",
+    "命令注入",
+    "XXE",
+    "越权",
+    "未授权",
+    "sqlmap",
+    "dalfox",
+    "文件解析漏洞"
+   ],
+   "size_bytes": 2577
+  },
+  {
+   "name": "pentest-lateral-movement",
+   "category": "pentest",
+   "path": "pentest-lateral-movement/SKILL.md",
+   "description": "内网横向移动",
+   "triggers": [
+    "横向移动",
+    "PTH",
+    "哈希传递",
+    "Mimikatz",
+    "Responder",
+    "Kerberoasting",
+    "黄金票据",
+    "白银票据",
+    "WMI",
+    "PsExec",
+    "WinRM"
+   ],
+   "size_bytes": 2662
+  },
+  {
+   "name": "pentest-pivoting",
+   "category": "pentest",
+   "path": "pentest-pivoting/SKILL.md",
+   "description": "内网隧道与穿透",
+   "triggers": [
+    "反弹shell",
+    "端口转发",
+    "socks代理",
+    "隧道",
+    "穿透",
+    "frp",
+    "chisel",
+    "Neo-reGeorg",
+    "DNS隧道",
+    "内网路由"
+   ],
+   "size_bytes": 2660
+  },
+  {
+   "name": "pentest-privilege-escalation",
+   "category": "pentest",
+   "path": "pentest-privilege-escalation/SKILL.md",
+   "description": "本地提权（Windows + Linux）",
+   "triggers": [
+    "提权",
+    "SUID",
+    "Sudoers",
+    "UAC绕过",
+    "PrintSpoofer",
+    "getsystem",
+    "PEASS",
+    "winPEAS",
+    "linPEAS",
+    "AlwaysInstallElevated"
+   ],
+   "size_bytes": 2627
+  },
+  {
+   "name": "pentest-report",
+   "category": "pentest",
+   "path": "pentest-report/SKILL.md",
+   "description": "渗透测试报告生成",
+   "triggers": [
+    "写报告",
+    "报告",
+    "CVSS评分",
+    "漏洞整理",
+    "markdown报告",
+    "腾讯文档写入",
+    "报告模板"
+   ],
+   "size_bytes": 2306
+  },
+  {
+   "name": "pentest-android",
+   "category": "pentest",
+   "path": "pentest-android/SKILL.md",
+   "description": "移动应用渗透测试（Android为主）",
+   "triggers": [
+    "APK",
+    "APP渗透",
+    "frida",
+    "hook",
+    "smali",
+    "jadx",
+    "反编译",
+    "APP抓包",
+    "SSL Pining",
+    "objection"
+   ],
+   "size_bytes": 4962
+  },
+  {
+   "name": "pentest-api",
+   "category": "pentest",
+   "path": "pentest-api/SKILL.md",
+   "description": "API安全测试与接口渗透",
+   "triggers": [
+    "API渗透",
+    "REST",
+    "GraphQL",
+    "SOAP",
+    "JWT",
+    "IDOR",
+    "越权",
+    "API Fuzzing",
+    "接口测试",
+    "Swagger"
+   ],
+   "size_bytes": 4062
+  },
+  {
+   "name": "pentest-attack-surface",
+   "category": "pentest",
+   "path": "pentest-attack-surface/SKILL.md",
+   "description": "红队攻击面分析与C2框架",
+   "triggers": [
+    "C2框架",
+    "免杀",
+    "payload",
+    "持久化",
+    "痕迹清理",
+    "社工钓鱼",
+    "防御规避",
+    "Domain Fronting",
+    "AMSI绕过"
+   ],
+   "size_bytes": 4202
+  },
+  {
+   "name": "pentest-expert",
+   "category": "pentest",
+   "path": "pentest-expert/SKILL.md",
+   "description": "渗透测试专家级综合技能",
+   "triggers": [
+    "全面渗透",
+    "专家级",
+    "综合评估",
+    "完整测试",
+    "PTES"
+   ],
+   "size_bytes": 1489
+  },
+  {
+   "name": "ctf-web",
+   "category": "ctf",
+   "path": "ctf-web/SKILL.md",
+   "description": "CTF Web方向解题",
+   "triggers": [
+    "CTF Web",
+    "SQL注入",
+    "XSS",
+    "SSRF",
+    "文件上传",
+    "反序列化",
+    "SSTI",
+    "命令注入",
+    "XXE",
+    "绕过技巧"
+   ],
+   "size_bytes": 4060
+  },
+  {
+   "name": "ctf-crypto",
+   "category": "ctf",
+   "path": "ctf-crypto/SKILL.md",
+   "description": "CTF Crypto密码学解题",
+   "triggers": [
+    "CTF Crypto",
+    "密码学",
+    "RSA",
+    "AES",
+    "DES",
+    "哈希",
+    "编码",
+    "MD5碰撞",
+    "长度扩展攻击",
+    "RSATool"
+   ],
+   "size_bytes": 3548
+  },
+  {
+   "name": "ctf-misc",
+   "category": "ctf",
+   "path": "ctf-misc/SKILL.md",
+   "description": "CTF Misc综合方向",
+   "triggers": [
+    "CTF Misc",
+    "隐写",
+    "LSB",
+    "zsteg",
+    "流量分析",
+    "pcap",
+    "内存取证",
+    "volatility",
+    "压缩包",
+    "日志分析"
+   ],
+   "size_bytes": 3713
+  },
+  {
+   "name": "ctf-reverse",
+   "category": "ctf",
+   "path": "ctf-reverse/SKILL.md",
+   "description": "CTF Reverse逆向工程",
+   "triggers": [
+    "CTF Reverse",
+    "逆向",
+    "IDA",
+    "Ghidra",
+    "反编译",
+    "算法逆向",
+    "调试",
+    "脱壳",
+    "Patch",
+    "PE/ELF"
+   ],
+   "size_bytes": 3539
+  },
+  {
+   "name": "ctf-pwn",
+   "category": "ctf",
+   "path": "ctf-pwn/SKILL.md",
+   "description": "CTF Pwn二进制漏洞利用",
+   "triggers": [
+    "CTF Pwn",
+    "栈溢出",
+    "ROP",
+    "格式化字符串",
+    "堆漏洞",
+    "Shellcode",
+    "ret2libc",
+    "checksec",
+    "one_gadget"
+   ],
+   "size_bytes": 3725
+  },
+  {
+   "name": "ctf-writeup",
+   "category": "ctf",
+   "path": "ctf-writeup/SKILL.md",
+   "description": "CTF Writeup 撰写规范",
+   "triggers": [
+    "Writeup",
+    "WP",
+    "writeup",
+    "write-up",
+    "解题报告"
+   ],
+   "size_bytes": 4791
+  },
+  {
+   "name": "ctf-forensics",
+   "category": "ctf",
+   "path": "ctf-forensics/SKILL.md",
+   "description": "CTF 取证方向",
+   "triggers": [
+    "取证",
+    "forensics",
+    "内存取证",
+    "磁盘取证",
+    "固件",
+    "图片隐写"
+   ],
+   "size_bytes": 36215
+  },
+  {
+   "name": "ctf-malware",
+   "category": "ctf",
+   "path": "ctf-malware/SKILL.md",
+   "description": "CTF 恶意软件分析",
+   "triggers": [
+    "恶意软件",
+    "malware",
+    "病毒分析",
+    "壳",
+    "加壳",
+    "脱壳",
+    "行为分析"
+   ],
+   "size_bytes": 8379
+  },
+  {
+   "name": "ctf-osint",
+   "category": "ctf",
+   "path": "ctf-osint/SKILL.md",
+   "description": "CTF OSINT 社工情报",
+   "triggers": [
+    "OSINT",
+    "社工库",
+    "情报收集",
+    "信息搜集",
+    "whois",
+    "DNS"
+   ],
+   "size_bytes": 9254
+  },
+  {
+   "name": "ctf-ai-ml",
+   "category": "ctf",
+   "path": "ctf-ai-ml/SKILL.md",
+   "description": "AI/ML 安全 CTF",
+   "triggers": [
+    "AI安全",
+    "ML安全",
+    "模型攻击",
+    "prompt注入",
+    "对抗样本"
+   ],
+   "size_bytes": 7062
+  }
+ ]
+}
