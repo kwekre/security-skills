@@ -89,6 +89,8 @@ Copy-Item -Recurse skills\* <你的 skills 目录>\
 ├── README_FULL.md             # 完整索引 + 分类表 + 来源
 ├── SKILL_REGISTRY.json        # 精简机器索引（核心技能）
 ├── SKILL_FULL_REGISTRY.json   # 完整机器索引（1404 技能）
+├── search.py                  # 命令行搜索 / 筛选工具
+├── PLACEHOLDERS.md            # 18 个权限受限占位技能清单
 ├── ctf/                       # CTF 方向手写摘要
 ├── pentest/                   # 渗透方向手写摘要
 └── skills/                    # 1404 个完整 SKILL.md（按 35 个分类子目录）
