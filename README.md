@@ -10,7 +10,6 @@
 ![categories](https://img.shields.io/badge/categories-35-green)
 ![updated](https://img.shields.io/badge/updated-2026--09-orange)
 ![format](https://img.shields.io/badge/format-SKILL.md-purple)
-![license](https://img.shields.io/badge/license-Attribution--NC-lightgrey)
 
 ---
 
@@ -97,8 +96,6 @@ Copy-Item -Recurse skills\* <你的 skills 目录>\
 
 ## 📚 来源与致谢
 
-本集合为**聚合整理**，技能版权归各原始作者所有，鸣谢以下仓库：
-
 | 来源仓库 | 说明 |
 |----------|------|
 | [wgpsec/AboutSecurity](https://github.com/wgpsec/AboutSecurity) | 200+ 渗透技能，完整攻击链（侦察→社工→利用→后渗透），中文 |
@@ -112,15 +109,3 @@ Copy-Item -Recurse skills\* <你的 skills 目录>\
 | [NovaCode37/claude-security-skills](https://github.com/NovaCode37/claude-security-skills) | 安全审计（秘钥扫描 / SAST / JWT / CORS / Dockerfile） |
 
 另有部分技能来自 SkillHub 技能市场。
-
-## ⚠️ 安全边界 / 免责声明
-
-- 仅可在**已获书面授权**的目标上执行主动安全测试。
-- 不得用于未授权入侵、绕过防护、DoS、账号爆破、无授权内网横向移动或拖取个人数据。
-- CTF / 靶场类技能仅用于授权训练环境。
-- 使用者须自行遵守所在地区法律法规；本集合作者不对任何滥用负责。
-
-## 📄 许可
-
-技能正文版权归各原始作者。本仓库作为**整理与索引**，以署名-非商业（Attribution-NC）方式聚合，
-转载请保留来源与作者署名。

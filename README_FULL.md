@@ -19,6 +19,8 @@
 | [hypnguyen1209/offensive-claude](https://github.com/hypnguyen1209/offensive-claude) | 31 个进攻工具技能 |
 | [NovaCode37/claude-security-skills](https://github.com/NovaCode37/claude-security-skills) | 安全审计（秘钥扫描 / SAST / JWT / CORS / Dockerfile） |
 
+另有部分技能来自 SkillHub 技能市场。
+
 ## 分类统计（35 类，合计 1404）
 
 | 分类 | 数量 |
@@ -89,9 +91,6 @@ for s in reg['skills']:
 ## 使用方式
 - 直接读取：`read skills/<分类>/<技能名>.md`（全文自带 frontmatter + 正文）。
 - 装入 Agent：把 `skills/` 复制到 Agent 的 skills 目录即可自动加载。
-
-## 安全边界
-仅对**已获书面授权**的目标执行主动测试；不绕过防护、不 DoS、不爆破、不无授权横向、不拖取 PII。CTF / 靶场仅用于授权训练。
 
 ## 已知限制
 - 约 18 个技能源文件因本机权限受限无法读取，包内以占位说明标注，路径不悬空。
